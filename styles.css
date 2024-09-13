@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+*{margin: 0;padding: 0;box-sizing: border-box;font-family: 'Roboto', sans-serif; font-weight: 500;}
+html{
+	font-size: 62.5%;
+}
+:root{
+	--black: #000000;
+	--light-red: #green;
+}
+.footer-container{
+	width: 100vw;
+	background-color: #111;
+	display: flex;
+	justify-content: space-around;
+	padding: 7rem 0 5rem 0;
+}
+
+/*footer left side start*/
+.footer-logo{
+	/*background-color: yellowgreen;*/
+	width: 18vw;
+	margin-left: 7rem;
+}
+.footer-logo h2{
+	font-size: 2.7rem;
+}
+.footer-logo p{
+	font-size: 1.4rem;
+	color: #fff;
+	padding: 1.5rem 0rem;
+	line-height: 2.1rem;
+}
+.footer-logo a{
+	text-decoration: none;
+}
+.fa{
+	background-color: var(--black);
+	color: #ffffff;
+	padding: .6rem;
+	border-radius: .3rem;
+}
+.icons{
+	margin: 0rem 1.5rem;
+}
+/*footer left side ends*/
+/*footer center starts*/
+.footer-links{
+	width: 32vw;
+	display: flex;
+	justify-content: space-between;
+	font-size: 1.4rem;
+}
+.footer-links ul a li{
+	list-style-type: none;
+	padding: 1rem 0rem;
+}
+.footer-links ul a{
+	text-decoration: none;
+	color: #fff;
+}	
+/*footer center ends*/
+
+/*footer right section*/
+.footer-contactus{
+	width: 17vw;
+}
+.footer-contactus h2{
+	font-size: 1.9rem;
+}
+.footer-contactus button{
+	padding: 1.4rem 2rem;
+    font-size: 1.6rem;
+    background: #0BA34E;
+    border: none;
+    border-radius: .4rem;
+    color: #fff;
+    margin-top: 1.6rem;
+    cursor: pointer;
+}
+.copywright-tag{
+	background-color: #111;
+	padding: 1.5rem;
+	font-size: 1.5rem;
+	text-align: center;
+}
+
+
+/*=========================responsive design============================*/
+@media(max-width: 986px){
+	html{
+		font-size: 55%;
+	}
+}
+@media(max-width: 800px){
+	.footer-container{
+		flex-direction: column;
+		align-items: center;
+	}
+	.footer-logo{
+		width: 32vw;
+		margin-bottom: 3rem;
+		margin-left: 0rem;
+	}
+	.footer-links{
+		flex-direction: column;
+		text-align: center;
+	}
+	.footer-links h3{
+		font-size: 2.4rem;
+		margin: 1rem 0px;
+	}
+	.footer-contactus{
+		width: 21vw;
+		margin-top: 2.4rem;
+		text-align: center;
+	}
+	.footer-contactus h2{
+		font-size: 2.5rem;
+	}
+}
